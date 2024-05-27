@@ -98,7 +98,7 @@
 			children = (
 				7D2981132C01E70A00A619FB /* Application */,
 				7D2981142C01E71100A619FB /* Presentation */,
-				7D2981152C01E71E00A619FB /* Network */,
+				7D2981152C01E71E00A619FB /* Domain */,
 				7D2981172C01E7E700A619FB /* Util */,
 				7D2981162C01E7CA00A619FB /* Resource */,
 			);
@@ -125,13 +125,13 @@
 			path = Presentation;
 			sourceTree = "<group>";
 		};
-		7D2981152C01E71E00A619FB /* Network */ = {
+		7D2981152C01E71E00A619FB /* Domain */ = {
 			isa = PBXGroup;
 			children = (
 				7D2981292C01EEC600A619FB /* Service */,
 				7D2981282C01ECC400A619FB /* Entity */,
 			);
-			path = Network;
+			path = Domain;
 			sourceTree = "<group>";
 		};
 		7D2981162C01E7CA00A619FB /* Resource */ = {
