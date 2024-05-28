@@ -25,6 +25,8 @@
 		7D29813F2C01F29200A619FB /* Sample+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D29813E2C01F29200A619FB /* Sample+Extension.swift */; };
 		7D2981412C01F29D00A619FB /* SampleUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2981402C01F29D00A619FB /* SampleUI.swift */; };
 		7D2981432C01F2C200A619FB /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7D2981422C01F2C200A619FB /* Localizable.strings */; };
+		7D3E96282C061CD2003A6FA9 /* SampleUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3E96272C061CD2003A6FA9 /* SampleUseCase.swift */; };
+		7D3E962A2C061DA3003A6FA9 /* SampleAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3E96292C061DA3003A6FA9 /* SampleAPI.swift */; };
 		C1F7B6D4D9D77FEE85D384AD /* Pods_ShowPot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 999AEFD252970E325474DF96 /* Pods_ShowPot.framework */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +52,8 @@
 		7D29813E2C01F29200A619FB /* Sample+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sample+Extension.swift"; sourceTree = "<group>"; };
 		7D2981402C01F29D00A619FB /* SampleUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleUI.swift; sourceTree = "<group>"; };
 		7D2981422C01F2C200A619FB /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		7D3E96272C061CD2003A6FA9 /* SampleUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleUseCase.swift; sourceTree = "<group>"; };
+		7D3E96292C061DA3003A6FA9 /* SampleAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleAPI.swift; sourceTree = "<group>"; };
 		999AEFD252970E325474DF96 /* Pods_ShowPot.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShowPot.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6D4A315F191B54F43DA7610 /* Pods-ShowPot.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShowPot.release.xcconfig"; path = "Target Support Files/Pods-ShowPot/Pods-ShowPot.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -98,8 +102,9 @@
 			children = (
 				7D2981132C01E70A00A619FB /* Application */,
 				7D2981142C01E71100A619FB /* Presentation */,
+				7D2981172C01E7E700A619FB /* Common */,
 				7D2981152C01E71E00A619FB /* Domain */,
-				7D2981172C01E7E700A619FB /* Util */,
+				7D3E96242C06181C003A6FA9 /* Data */,
 				7D2981162C01E7CA00A619FB /* Resource */,
 			);
 			path = ShowPot;
@@ -110,8 +115,6 @@
 			children = (
 				7D2980FF2C01E1D000A619FB /* AppDelegate.swift */,
 				7D2981012C01E1D000A619FB /* SceneDelegate.swift */,
-				7D29810D2C01E1D300A619FB /* Info.plist */,
-				7D29810A2C01E1D300A619FB /* LaunchScreen.storyboard */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -128,7 +131,7 @@
 		7D2981152C01E71E00A619FB /* Domain */ = {
 			isa = PBXGroup;
 			children = (
-				7D2981292C01EEC600A619FB /* Service */,
+				7D3E96262C061C61003A6FA9 /* UseCase */,
 				7D2981282C01ECC400A619FB /* Entity */,
 			);
 			path = Domain;
@@ -137,19 +140,21 @@
 		7D2981162C01E7CA00A619FB /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				7D29810D2C01E1D300A619FB /* Info.plist */,
+				7D29810A2C01E1D300A619FB /* LaunchScreen.storyboard */,
 				7D2981082C01E1D300A619FB /* Assets.xcassets */,
 				7D29811A2C01EAD200A619FB /* Localizable */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
 		};
-		7D2981172C01E7E700A619FB /* Util */ = {
+		7D2981172C01E7E700A619FB /* Common */ = {
 			isa = PBXGroup;
 			children = (
 				7D2981192C01E91300A619FB /* Extension */,
 				7D2981182C01E90A00A619FB /* UI */,
 			);
-			path = Util;
+			path = Common;
 			sourceTree = "<group>";
 		};
 		7D2981182C01E90A00A619FB /* UI */ = {
@@ -279,12 +284,12 @@
 			path = Entity;
 			sourceTree = "<group>";
 		};
-		7D2981292C01EEC600A619FB /* Service */ = {
+		7D2981292C01EEC600A619FB /* Infrastructure */ = {
 			isa = PBXGroup;
 			children = (
 				7D2981362C01F25B00A619FB /* APIService.swift */,
 			);
-			path = Service;
+			path = Infrastructure;
 			sourceTree = "<group>";
 		};
 		7D2981382C01F26F00A619FB /* Response */ = {
@@ -301,6 +306,31 @@
 				7D29813A2C01F27B00A619FB /* SampleRequest.swift */,
 			);
 			path = Request;
+			sourceTree = "<group>";
+		};
+		7D3E96242C06181C003A6FA9 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				7D3E96252C061BC4003A6FA9 /* Network */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		7D3E96252C061BC4003A6FA9 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				7D3E96292C061DA3003A6FA9 /* SampleAPI.swift */,
+				7D2981292C01EEC600A619FB /* Infrastructure */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		7D3E96262C061C61003A6FA9 /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+				7D3E96272C061CD2003A6FA9 /* SampleUseCase.swift */,
+			);
+			path = UseCase;
 			sourceTree = "<group>";
 		};
 		F2236FCD150B30783142EC44 /* Frameworks */ = {
@@ -430,11 +460,13 @@
 				7D29813D2C01F28100A619FB /* SampleResponse.swift in Sources */,
 				7D29811E2C01EB8A00A619FB /* BaseViewController.swift in Sources */,
 				7D29813F2C01F29200A619FB /* Sample+Extension.swift in Sources */,
+				7D3E962A2C061DA3003A6FA9 /* SampleAPI.swift in Sources */,
 				7D29812F2C01F23400A619FB /* SavedViewController.swift in Sources */,
 				7D2981002C01E1D000A619FB /* AppDelegate.swift in Sources */,
 				7D2981372C01F25B00A619FB /* APIService.swift in Sources */,
 				7D29813B2C01F27B00A619FB /* SampleRequest.swift in Sources */,
 				7D2981022C01E1D000A619FB /* SceneDelegate.swift in Sources */,
+				7D3E96282C061CD2003A6FA9 /* SampleUseCase.swift in Sources */,
 				7D2981352C01F25100A619FB /* SettingViewModel.swift in Sources */,
 				7D29812D2C01F22B00A619FB /* FeaturedViewModel.swift in Sources */,
 				7D2981312C01F23C00A619FB /* SavedViewModel.swift in Sources */,
@@ -588,7 +620,7 @@
 				DEVELOPMENT_TEAM = ZW6466CHF4;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ShowPot/Application/Info.plist;
+				INFOPLIST_FILE = ShowPot/Resource/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -621,7 +653,7 @@
 				DEVELOPMENT_TEAM = ZW6466CHF4;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ShowPot/Application/Info.plist;
+				INFOPLIST_FILE = ShowPot/Resource/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

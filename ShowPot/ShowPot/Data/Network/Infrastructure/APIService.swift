@@ -6,3 +6,9 @@
 //
 
 import Foundation
+
+final class APIService {
+    func fetchRequest() {
+        print("request")
+    }
+}

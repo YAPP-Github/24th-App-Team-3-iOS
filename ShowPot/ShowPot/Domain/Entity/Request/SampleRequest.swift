@@ -6,3 +6,7 @@
 //
 
 import Foundation
+
+struct SampleRequest {
+    let id: String
+}
