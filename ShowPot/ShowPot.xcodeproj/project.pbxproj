@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7D1E5FAD2C0A20950012504D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1E5FAC2C0A20950012504D /* LoginViewController.swift */; };
+		7D1E5FAF2C0A20A10012504D /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1E5FAE2C0A20A10012504D /* LoginViewModel.swift */; };
 		7D2981002C01E1D000A619FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2980FF2C01E1D000A619FB /* AppDelegate.swift */; };
 		7D2981022C01E1D000A619FB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2981012C01E1D000A619FB /* SceneDelegate.swift */; };
 		7D2981042C01E1D000A619FB /* MainTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2981032C01E1D000A619FB /* MainTabViewController.swift */; };
@@ -32,6 +34,8 @@
 
 /* Begin PBXFileReference section */
 		1733A9B272CAB82DB9DCAB94 /* Pods-ShowPot.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShowPot.debug.xcconfig"; path = "Target Support Files/Pods-ShowPot/Pods-ShowPot.debug.xcconfig"; sourceTree = "<group>"; };
+		7D1E5FAC2C0A20950012504D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		7D1E5FAE2C0A20A10012504D /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		7D2980FC2C01E1D000A619FB /* ShowPot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShowPot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D2980FF2C01E1D000A619FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7D2981012C01E1D000A619FB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -77,6 +81,31 @@
 				D6D4A315F191B54F43DA7610 /* Pods-ShowPot.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		7D1E5FB02C0A20A50012504D /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				7D1E5FAC2C0A20950012504D /* LoginViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		7D1E5FB12C0A20AE0012504D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				7D1E5FAE2C0A20A10012504D /* LoginViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		7D1E5FB22C0A20BB0012504D /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				7D1E5FB02C0A20A50012504D /* ViewController */,
+				7D1E5FB12C0A20AE0012504D /* ViewModel */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 		7D2980F32C01E1D000A619FB = {
@@ -192,6 +221,7 @@
 		7D29811C2C01EB6300A619FB /* Scene */ = {
 			isa = PBXGroup;
 			children = (
+				7D1E5FB22C0A20BB0012504D /* Login */,
 				7D2981032C01E1D000A619FB /* MainTabViewController.swift */,
 				7D29811F2C01EC0C00A619FB /* Featured */,
 				7D2981222C01EC3B00A619FB /* Saved */,
@@ -456,6 +486,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D1E5FAD2C0A20950012504D /* LoginViewController.swift in Sources */,
 				7D2981042C01E1D000A619FB /* MainTabViewController.swift in Sources */,
 				7D29813D2C01F28100A619FB /* SampleResponse.swift in Sources */,
 				7D29811E2C01EB8A00A619FB /* BaseViewController.swift in Sources */,
@@ -472,6 +503,7 @@
 				7D2981312C01F23C00A619FB /* SavedViewModel.swift in Sources */,
 				7D2981412C01F29D00A619FB /* SampleUI.swift in Sources */,
 				7D29812B2C01F22300A619FB /* FeaturedViewController.swift in Sources */,
+				7D1E5FAF2C0A20A10012504D /* LoginViewModel.swift in Sources */,
 				7D2981332C01F24500A619FB /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
