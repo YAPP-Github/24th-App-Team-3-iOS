@@ -10,8 +10,16 @@ import UIKit
 
 class LoginViewController: BaseViewController {
     
+    var coordinator: LoginCoordinator?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .yellow
+        let item = UIBarButtonItem(title: "로그인", style: .plain, target: self, action: #selector(self.loginButtonDidTap))
+        self.navigationItem.rightBarButtonItem = item
+    }
+    
+    @objc
+    func loginButtonDidTap() {
+        self.coordinator?.didLoggedIn()
     }
 }
