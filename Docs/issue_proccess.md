@@ -22,6 +22,10 @@
 2. `develop`에서 `bugfix/#5-login_retry_error` 브랜치 생성하여 작업
 3. `develop`에 PR올리고 코드리뷰 후 `develop`에 머지
 
+```
+‼️‼️ `feature`, `bugfix`, `refactor`이외의 유형이 필요한 경우 `bugfix`와 `refactor`의 프로세스를 따릅니다
+```
+
 ## 2. 커밋 타이틀 규칙
 커밋은 타이틀 앞에 이슈 티켓 번호를 붙입니다
 
