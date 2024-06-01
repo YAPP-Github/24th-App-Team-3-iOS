@@ -24,4 +24,7 @@ target 'ShowPot' do
   # Foundation
   pod 'Alamofire'
 
+  # Social Login
+  pod 'GoogleSignIn'
+
 end
