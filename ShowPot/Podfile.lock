@@ -1,16 +1,31 @@
 PODS:
-  - Alamofire (5.7.1)
-  - RxCocoa (6.5.0):
-    - RxRelay (= 6.5.0)
-    - RxSwift (= 6.5.0)
-  - RxRelay (6.5.0):
-    - RxSwift (= 6.5.0)
-  - RxSwift (6.5.0)
-  - SnapKit (5.6.0)
+  - Alamofire (5.9.1)
+  - AppAuth (1.7.5):
+    - AppAuth/Core (= 1.7.5)
+    - AppAuth/ExternalUserAgent (= 1.7.5)
+  - AppAuth/Core (1.7.5)
+  - AppAuth/ExternalUserAgent (1.7.5):
+    - AppAuth/Core
+  - GoogleSignIn (7.1.0):
+    - AppAuth (< 2.0, >= 1.7.3)
+    - GTMAppAuth (< 5.0, >= 4.1.1)
+    - GTMSessionFetcher/Core (~> 3.3)
+  - GTMAppAuth (4.1.1):
+    - AppAuth/Core (~> 1.7)
+    - GTMSessionFetcher/Core (< 4.0, >= 3.3)
+  - GTMSessionFetcher/Core (3.4.1)
+  - RxCocoa (6.7.1):
+    - RxRelay (= 6.7.1)
+    - RxSwift (= 6.7.1)
+  - RxRelay (6.7.1):
+    - RxSwift (= 6.7.1)
+  - RxSwift (6.7.1)
+  - SnapKit (5.7.1)
   - Then (3.0.0)
 
 DEPENDENCIES:
   - Alamofire
+  - GoogleSignIn
   - RxCocoa
   - RxSwift
   - SnapKit
@@ -19,6 +34,10 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - Alamofire
+    - AppAuth
+    - GoogleSignIn
+    - GTMAppAuth
+    - GTMSessionFetcher
     - RxCocoa
     - RxRelay
     - RxSwift
@@ -26,13 +45,17 @@ SPEC REPOS:
     - Then
 
 SPEC CHECKSUMS:
-  Alamofire: 0123a34370cb170936ae79a8df46cc62b2edeb88
-  RxCocoa: 94f817b71c07517321eb4f9ad299112ca8af743b
-  RxRelay: 1de1523e604c72b6c68feadedd1af3b1b4d0ecbd
-  RxSwift: 5710a9e6b17f3c3d6e40d6e559b9fa1e813b2ef8
-  SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
+  Alamofire: f36a35757af4587d8e4f4bfa223ad10be2422b8c
+  AppAuth: 501c04eda8a8d11f179dbe8637b7a91bb7e5d2fa
+  GoogleSignIn: d4281ab6cf21542b1cfaff85c191f230b399d2db
+  GTMAppAuth: f69bd07d68cd3b766125f7e072c45d7340dea0de
+  GTMSessionFetcher: 8000756fc1c19d2e5697b90311f7832d2e33f6cd
+  RxCocoa: f5609cb4637587a7faa99c5d5787e3ad582b75a4
+  RxRelay: 4151ba01152436b08271e08410135e099880eae5
+  RxSwift: b9a93a26031785159e11abd40d1a55bcb8057e52
+  SnapKit: d612e99e678a2d3b95bf60b0705ed0a35c03484a
   Then: 844265ae87834bbe1147d91d5d41a404da2ec27d
 
-PODFILE CHECKSUM: a85dc9d128c3681b83933efded0967f4a3d9e564
+PODFILE CHECKSUM: a768d794ff00d765f7a397e48ed4ed1508ca4cea
 
 COCOAPODS: 1.15.2
