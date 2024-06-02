@@ -7,16 +7,22 @@
 
 import UIKit
 
+import GoogleSignIn
+import RxSwift
+import RxCocoa
 import SnapKit
 import Then
 
 final class LoginViewController: BaseViewController {
     
     var coordinator: LoginCoordinator?
+    private let disposeBag = DisposeBag()
     
     private let containerStackView = UIStackView().then {
         $0.backgroundColor = .clear
     }
+    
+    private let googleSignInButton = GIDSignInButton()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,18 +30,21 @@ final class LoginViewController: BaseViewController {
         setupLayouts()
         setupConstraints()
         setupStyles()
-        
-        let item = UIBarButtonItem(title: "로그인", style: .plain, target: self, action: #selector(self.loginButtonDidTap))
-        self.navigationItem.rightBarButtonItem = item
+        bind()
     }
     
     private func setupLayouts() {
         view.addSubview(containerStackView)
+        containerStackView.addArrangedSubview(googleSignInButton)
     }
     
     private func setupConstraints() {
         containerStackView.snp.makeConstraints {
-            $0.directionalEdges.equalToSuperview()
+            $0.center.equalToSuperview()
+        }
+        
+        googleSignInButton.snp.makeConstraints {
+            $0.height.equalTo(50)
         }
     }
     
@@ -43,8 +52,17 @@ final class LoginViewController: BaseViewController {
         
     }
     
-    @objc
-    func loginButtonDidTap() {
-        self.coordinator?.didLoggedIn()
+    private func bind() {
+        
+        // TODO: 최대건 - 애플 계정 추가 및 Google clientID, URL Schemes xcconfig로 빼기
+        
+        googleSignInButton.rx.controlEvent(.touchUpInside)
+            .subscribe(with: self) { owner, _ in
+                GIDSignIn.sharedInstance.signIn(withPresenting: owner) { result, error in
+                  guard error == nil else { return }
+                    
+                }
+            }
+            .disposed(by: disposeBag)
     }
 }
