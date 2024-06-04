@@ -32,7 +32,6 @@ final class LoginViewController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         setupLayouts()
         setupConstraints()
         setupStyles()
