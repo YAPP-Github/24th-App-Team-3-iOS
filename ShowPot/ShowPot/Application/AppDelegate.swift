@@ -12,9 +12,7 @@ import KakaoSDKCommon
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
-    
-    
-    
+  
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
         //TODO: 최대건 - 카카오톡 소셜로그인 이용을 위해 필수값인데 추후 xcconfig로 네이티브 앱 키 설정 필요
@@ -38,10 +36,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func application(_ application: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey: Any]) -> Bool {
-        
         return GIDSignIn.sharedInstance.handle(url)
     }
-    
     
 }
 
