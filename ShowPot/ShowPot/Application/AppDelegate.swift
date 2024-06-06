@@ -36,6 +36,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func application(_ application: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey: Any]) -> Bool {
+        
+        // MARK: 구글 소셜로그인을 할때에 인증 프로세스가 끝날 때 애플리케이션이 수신하는 URL을 적절히 처리
+        // 참고하면 좋은 사이트 : https://firebase.google.com/docs/auth/ios/google-signin?hl=ko
         return GIDSignIn.sharedInstance.handle(url)
     }
     

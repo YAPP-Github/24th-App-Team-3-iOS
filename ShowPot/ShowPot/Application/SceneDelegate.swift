@@ -56,6 +56,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     }
     
     func scene(_ scene: UIScene, openURLContexts URLContexts: Set<UIOpenURLContext>) {
+        
+        // MARK: 카카오톡 소셜로그인 시 서비스 앱으로 돌아왔을 때 카카오 로그인 처리를 정상적으로 완료하기위한 로직
+        // 참고하면 좋은 사이트 : https://developers.kakao.com/docs/latest/ko/kakaologin/ios
         if let url = URLContexts.first?.url {
             if (AuthApi.isKakaoTalkLoginUrl(url)) {
                 _ = AuthController.handleOpenUrl(url: url)
