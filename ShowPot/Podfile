@@ -24,4 +24,10 @@ target 'ShowPot' do
   # Foundation
   pod 'Alamofire'
 
+  # Social Login
+  pod 'GoogleSignIn', '~> 7.1.0'
+  pod 'KakaoSDKAuth', '~> 2.22.2'  # 사용자 인증
+  pod 'KakaoSDKUser', '~> 2.22.2'  # 카카오 로그인, 사용자 관리
+  pod 'KakaoSDKCommon', '~> 2.22.2'  # 필수 요소를 담은 공통 모듈
+
 end
