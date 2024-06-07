@@ -1,0 +1,24 @@
+//
+//  ShowPot-Debug.xcconfig
+//  ShowPot
+//
+//  Created by Daegeon Choi on 6/7/24.
+//
+
+// 해당 파일에서 정의되는 값들을 다른 Swift 파일에서 사용하기 위해 Info.plist 및 Environment.swift 파일 수정 필요
+// 해당 파일에서 정의되는 값들은 앱 내부 Swift 프로퍼티와 구분하기 위해 대문자 snake-case 사용
+// e.g. EXAMPLE_VALUE
+
+#include "Target Support Files/Pods-ShowPot/Pods-ShowPot.release.xcconfig"
+
+// App project settings
+APP_NAME = ShowPot
+
+// Network Defines
+BASE_URL = https:/$()/baseurl.com
+API_KEY = ---
+
+// Social Login Token
+KAKAO_CLIENT_ID = ---
+GOOGLE_URL_SCHEMES = ---
+GOOGLE_CLIENT_ID = ---
