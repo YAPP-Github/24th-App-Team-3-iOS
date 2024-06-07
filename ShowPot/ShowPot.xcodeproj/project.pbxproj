@@ -30,6 +30,7 @@
 		7D29813F2C01F29200A619FB /* Sample+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D29813E2C01F29200A619FB /* Sample+Extension.swift */; };
 		7D2981412C01F29D00A619FB /* SampleUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2981402C01F29D00A619FB /* SampleUI.swift */; };
 		7D2981432C01F2C200A619FB /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7D2981422C01F2C200A619FB /* Localizable.strings */; };
+		7D3196422C133EC90015F88E /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3196412C133EC90015F88E /* Environment.swift */; };
 		7D3E96282C061CD2003A6FA9 /* SampleUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3E96272C061CD2003A6FA9 /* SampleUseCase.swift */; };
 		7D3E962A2C061DA3003A6FA9 /* SampleAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3E96292C061DA3003A6FA9 /* SampleAPI.swift */; };
 		C1F7B6D4D9D77FEE85D384AD /* Pods_ShowPot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 999AEFD252970E325474DF96 /* Pods_ShowPot.framework */; };
@@ -62,6 +63,9 @@
 		7D29813E2C01F29200A619FB /* Sample+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sample+Extension.swift"; sourceTree = "<group>"; };
 		7D2981402C01F29D00A619FB /* SampleUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleUI.swift; sourceTree = "<group>"; };
 		7D2981422C01F2C200A619FB /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		7D31963D2C1336A70015F88E /* ShowPot-Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "ShowPot-Release.xcconfig"; sourceTree = "<group>"; };
+		7D31963E2C1336BE0015F88E /* ShowPot-Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "ShowPot-Debug.xcconfig"; sourceTree = "<group>"; };
+		7D3196412C133EC90015F88E /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 		7D3E96272C061CD2003A6FA9 /* SampleUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleUseCase.swift; sourceTree = "<group>"; };
 		7D3E96292C061DA3003A6FA9 /* SampleAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleAPI.swift; sourceTree = "<group>"; };
 		999AEFD252970E325474DF96 /* Pods_ShowPot.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShowPot.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -201,6 +205,7 @@
 				7D29810A2C01E1D300A619FB /* LaunchScreen.storyboard */,
 				7D2981082C01E1D300A619FB /* Assets.xcassets */,
 				7D29811A2C01EAD200A619FB /* Localizable */,
+				7D31963C2C13367D0015F88E /* Configuration */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -210,6 +215,7 @@
 			children = (
 				7D2981192C01E91300A619FB /* Extension */,
 				7D2981182C01E90A00A619FB /* UI */,
+				7D3196412C133EC90015F88E /* Environment.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -361,6 +367,15 @@
 				7D29813A2C01F27B00A619FB /* SampleRequest.swift */,
 			);
 			path = Request;
+			sourceTree = "<group>";
+		};
+		7D31963C2C13367D0015F88E /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				7D31963D2C1336A70015F88E /* ShowPot-Release.xcconfig */,
+				7D31963E2C1336BE0015F88E /* ShowPot-Debug.xcconfig */,
+			);
+			path = Configuration;
 			sourceTree = "<group>";
 		};
 		7D3E96242C06181C003A6FA9 /* Data */ = {
@@ -524,6 +539,7 @@
 				7D1E5FB62C0A23AB0012504D /* LoginCoordinator.swift in Sources */,
 				7D29813B2C01F27B00A619FB /* SampleRequest.swift in Sources */,
 				7D2981022C01E1D000A619FB /* SceneDelegate.swift in Sources */,
+				7D3196422C133EC90015F88E /* Environment.swift in Sources */,
 				7D3E96282C061CD2003A6FA9 /* SampleUseCase.swift in Sources */,
 				7D1E5FB42C0A23700012504D /* AppCoordinator.swift in Sources */,
 				7D2981352C01F25100A619FB /* SettingViewModel.swift in Sources */,
@@ -671,7 +687,7 @@
 		};
 		7D2981112C01E1D300A619FB /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1733A9B272CAB82DB9DCAB94 /* Pods-ShowPot.debug.xcconfig */;
+			baseConfigurationReference = 7D31963E2C1336BE0015F88E /* ShowPot-Debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -703,7 +719,7 @@
 		};
 		7D2981122C01E1D300A619FB /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D6D4A315F191B54F43DA7610 /* Pods-ShowPot.release.xcconfig */;
+			baseConfigurationReference = 7D31963D2C1336A70015F88E /* ShowPot-Release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -727,6 +743,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = RELEASE;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
