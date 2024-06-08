@@ -36,10 +36,10 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire
-  - GoogleSignIn
-  - KakaoSDKAuth
-  - KakaoSDKCommon
-  - KakaoSDKUser
+  - GoogleSignIn (~> 7.1.0)
+  - KakaoSDKAuth (~> 2.22.2)
+  - KakaoSDKCommon (~> 2.22.2)
+  - KakaoSDKUser (~> 2.22.2)
   - RxCocoa
   - RxSwift
   - SnapKit
@@ -76,6 +76,6 @@ SPEC CHECKSUMS:
   SnapKit: d612e99e678a2d3b95bf60b0705ed0a35c03484a
   Then: 844265ae87834bbe1147d91d5d41a404da2ec27d
 
-PODFILE CHECKSUM: c9c88782a99aedebf98482b42db6a27381901053
+PODFILE CHECKSUM: d46cc481569df93277a8325b123182c0f483d96b
 
-COCOAPODS: 1.15.2
+COCOAPODS: 1.14.3

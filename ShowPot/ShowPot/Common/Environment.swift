@@ -17,22 +17,22 @@ public enum Environment {
     
     /// 서버 API 사용을 위한 base url
     static let baseURL: String = {
-        return value(key: "BASE_URL")
+        return Environment.value(key: "BASE_URL")
     }()
     
     /// 카카오 소셜 로그인을 위한 클라이언트 ID
     static let kakaoClientID: String = {
-        return value(key: "KAKAO_CLIENT_ID")
+        return Environment.value(key: "KAKAO_CLIENT_ID")
     }()
     
     /// 구글 소셜 로그인을 위한 url schemes
     static let googleUrlSchemes: String = {
-        return value(key: "GOOGLE_URL_SCHEMES")
+        return Environment.value(key: "GOOGLE_URL_SCHEMES")
     }()
     
     /// 구글 소셜 로그인을 위한 client ID
     static let googleClientID: String = {
-        return value(key: "GOOGLE_CLIENT_ID")
+        return Environment.value(key: "GOOGLE_CLIENT_ID")
     }()
 
 }
@@ -49,8 +49,8 @@ extension Environment {
     }()
     
     /// 값 추출
-    public func value(key: String) -> String {
-        guard let value = Environment.infoDictionary[] as? String else {
+    fileprivate static func value(key: String) -> String {
+        guard let value = Environment.infoDictionary[key] as? String else {
             fatalError("No such file for key: \(key)")
         }
         
