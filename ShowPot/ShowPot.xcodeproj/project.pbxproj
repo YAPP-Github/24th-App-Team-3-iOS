@@ -36,6 +36,7 @@
 		7D3196422C133EC90015F88E /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3196412C133EC90015F88E /* Environment.swift */; };
 		7D3E96282C061CD2003A6FA9 /* SampleUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3E96272C061CD2003A6FA9 /* SampleUseCase.swift */; };
 		7D3E962A2C061DA3003A6FA9 /* SampleAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3E96292C061DA3003A6FA9 /* SampleAPI.swift */; };
+		7D8574C12C187A1F0042F539 /* LoginViewHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D8574C02C187A1F0042F539 /* LoginViewHolder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -73,6 +74,7 @@
 		7D3196412C133EC90015F88E /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 		7D3E96272C061CD2003A6FA9 /* SampleUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleUseCase.swift; sourceTree = "<group>"; };
 		7D3E96292C061DA3003A6FA9 /* SampleAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleAPI.swift; sourceTree = "<group>"; };
+		7D8574C02C187A1F0042F539 /* LoginViewHolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewHolder.swift; sourceTree = "<group>"; };
 		9C5E3FD03EE9C1E9E373BB01 /* Pods-ShowPot.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShowPot.debug.xcconfig"; path = "Target Support Files/Pods-ShowPot/Pods-ShowPot.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -119,6 +121,7 @@
 				7D1E5FB02C0A20A50012504D /* ViewController */,
 				7D1E5FB12C0A20AE0012504D /* ViewModel */,
 				7D1E5FB72C0A23B20012504D /* Coordinator */,
+				7D8574C22C187A230042F539 /* ViewHolder */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -409,6 +412,14 @@
 			path = UseCase;
 			sourceTree = "<group>";
 		};
+		7D8574C22C187A230042F539 /* ViewHolder */ = {
+			isa = PBXGroup;
+			children = (
+				7D8574C02C187A1F0042F539 /* LoginViewHolder.swift */,
+			);
+			path = ViewHolder;
+			sourceTree = "<group>";
+		};
 		B7FDDD5BC531B3291F217534 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -540,6 +551,7 @@
 				7D1E5FBA2C0A28080012504D /* MainTabCoordinator.swift in Sources */,
 				7D3E962A2C061DA3003A6FA9 /* SampleAPI.swift in Sources */,
 				7D29812F2C01F23400A619FB /* SavedViewController.swift in Sources */,
+				7D8574C12C187A1F0042F539 /* LoginViewHolder.swift in Sources */,
 				7D2981002C01E1D000A619FB /* AppDelegate.swift in Sources */,
 				7D2981372C01F25B00A619FB /* APIService.swift in Sources */,
 				7D1E5FB62C0A23AB0012504D /* LoginCoordinator.swift in Sources */,
