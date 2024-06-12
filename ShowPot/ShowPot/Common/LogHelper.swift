@@ -36,4 +36,10 @@ extension LogHelper {
             }
         }
     }
+    
+    enum Privacy {
+        case `privacy`
+        case `public`
+        case auto
+    }
 }
