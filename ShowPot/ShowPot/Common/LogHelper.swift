@@ -11,59 +11,63 @@ import os.log
 enum LogHelper {
     private static let subsystem = Bundle.main.bundleIdentifier!
     
-    static func debug(_ message: String, privacy: Privacy = .public) {
+    static func debug(_ message: String, privacy: Privacy = .public, fileID: String = #fileID, line: Int = #line, function: String = #function) {
         let logger = Logger(subsystem: LogHelper.subsystem, category: Level.debug.category)
         let logMessage = "\(message)"
+        let fileIDAndLine = "[\(fileID):\(line)]"
         
         switch privacy {
             case .privacy:
-                logger.debug("\(logMessage, privacy: .private)")
+                logger.debug("\(fileIDAndLine, align: .left(columns: 30)) \(function, align: .left(columns: 50)) \(logMessage, privacy: .private)")
             case .public:
-                logger.debug("\(logMessage, privacy: .public)")
+                logger.debug("\(fileIDAndLine, align: .left(columns: 30)) \(function, align: .left(columns: 50)) \(logMessage, privacy: .public)")
             case .auto:
-                logger.debug("\(logMessage, privacy: .auto)")
+                logger.debug("\(fileIDAndLine, align: .left(columns: 30)) \(function, align: .left(columns: 50)) \(logMessage, privacy: .auto)")
         }
     }
     
-    static func info(_ message: String, privacy: Privacy = .public) {
+    static func info(_ message: String, privacy: Privacy = .public, fileID: String = #fileID, line: Int = #line, function: String = #function) {
         let logger = Logger(subsystem: LogHelper.subsystem, category: Level.info.category)
         let logMessage = "\(message)"
+        let fileIDAndLine = "[\(fileID):\(line)]"
         
         switch privacy {
             case .privacy:
-                logger.info("\(logMessage, privacy: .private)")
+                logger.info("\(fileIDAndLine, align: .left(columns: 30)) \(function, align: .left(columns: 50)) \(logMessage, privacy: .private)")
             case .public:
-                logger.info("\(logMessage, privacy: .public)")
+                logger.info("\(fileIDAndLine, align: .left(columns: 30)) \(function, align: .left(columns: 50)) \(logMessage, privacy: .public)")
             case .auto:
-                logger.info("\(logMessage, privacy: .auto)")
+                logger.info("\(fileIDAndLine, align: .left(columns: 30)) \(function, align: .left(columns: 50)) \(logMessage, privacy: .auto)")
         }
     }
     
-    static func error(_ message: String, privacy: Privacy = .public) {
+    static func error(_ message: String, privacy: Privacy = .public, fileID: String = #fileID, line: Int = #line, function: String = #function) {
         let logger = Logger(subsystem: LogHelper.subsystem, category: Level.error.category)
         let logMessage = "\(message)"
+        let fileIDAndLine = "[\(fileID):\(line)]"
         
         switch privacy {
             case .privacy:
-                logger.error("\(logMessage, privacy: .private)")
+                logger.error("\(fileIDAndLine, align: .left(columns: 30)) \(function, align: .left(columns: 50)) \(logMessage, privacy: .private)")
             case .public:
-                logger.error("\(logMessage, privacy: .public)")
+                logger.error("\(fileIDAndLine, align: .left(columns: 30)) \(function, align: .left(columns: 50)) \(logMessage, privacy: .public)")
             case .auto:
-                logger.error("\(logMessage, privacy: .auto)")
+                logger.error("\(fileIDAndLine, align: .left(columns: 30)) \(function, align: .left(columns: 50)) \(logMessage, privacy: .auto)")
         }
     }
     
-    static func notice(_ message: String, privacy: Privacy = .public) {
+    static func notice(_ message: String, privacy: Privacy = .public, fileID: String = #fileID, line: Int = #line, function: String = #function) {
         let logger = Logger(subsystem: LogHelper.subsystem, category: Level.notice.category)
         let logMessage = "\(message)"
+        let fileIDAndLine = "[\(fileID):\(line)]"
         
         switch privacy {
             case .privacy:
-                logger.notice("\(logMessage, privacy: .private)")
+                logger.notice("\(fileIDAndLine, align: .left(columns: 30)) \(function, align: .left(columns: 50)) \(logMessage, privacy: .private)")
             case .public:
-                logger.notice("\(logMessage, privacy: .public)")
+                logger.notice("\(fileIDAndLine, align: .left(columns: 30)) \(function, align: .left(columns: 50)) \(logMessage, privacy: .public)")
             case .auto:
-                logger.notice("\(logMessage, privacy: .auto)")
+                logger.notice("\(fileIDAndLine, align: .left(columns: 30)) \(function, align: .left(columns: 50)) \(logMessage, privacy: .auto)")
         }
     }
 }
