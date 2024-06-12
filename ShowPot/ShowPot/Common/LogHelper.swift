@@ -11,8 +11,8 @@ import os.log
 enum LogHelper {
     private static let subsystem = Bundle.main.bundleIdentifier!
     
-    static func debug(_ message: String, level: Level, privacy: Privacy = .public) {
-        let logger = Logger(subsystem: LogHelper.subsystem, category: level.category)
+    static func debug(_ message: String, privacy: Privacy = .public) {
+        let logger = Logger(subsystem: LogHelper.subsystem, category: Level.debug.category)
         let logMessage = "\(message)"
         
         switch privacy {
@@ -25,8 +25,8 @@ enum LogHelper {
         }
     }
     
-    static func info(_ message: String, level: Level, privacy: Privacy = .public) {
-        let logger = Logger(subsystem: LogHelper.subsystem, category: level.category)
+    static func info(_ message: String, privacy: Privacy = .public) {
+        let logger = Logger(subsystem: LogHelper.subsystem, category: Level.info.category)
         let logMessage = "\(message)"
         
         switch privacy {
@@ -39,8 +39,8 @@ enum LogHelper {
         }
     }
     
-    static func error(_ message: String, level: Level, privacy: Privacy = .public) {
-        let logger = Logger(subsystem: LogHelper.subsystem, category: level.category)
+    static func error(_ message: String, privacy: Privacy = .public) {
+        let logger = Logger(subsystem: LogHelper.subsystem, category: Level.error.category)
         let logMessage = "\(message)"
         
         switch privacy {
@@ -53,8 +53,8 @@ enum LogHelper {
         }
     }
     
-    static func notice(_ message: String, level: Level, privacy: Privacy = .public) {
-        let logger = Logger(subsystem: LogHelper.subsystem, category: level.category)
+    static func notice(_ message: String, privacy: Privacy = .public) {
+        let logger = Logger(subsystem: LogHelper.subsystem, category: Level.notice.category)
         let logMessage = "\(message)"
         
         switch privacy {
