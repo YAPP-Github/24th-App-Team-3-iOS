@@ -6,9 +6,70 @@
 //
 
 import Foundation
+import os.log
 
-struct LogHelper {
+enum LogHelper {
+    private static let subsystem = Bundle.main.bundleIdentifier!
     
+    static func debug(_ message: String, level: Level, privacy: Privacy = .public) {
+        let logger = Logger(subsystem: LogHelper.subsystem, category: level.category)
+        let logMessage = "\(message)"
+        
+        switch privacy {
+            case .privacy:
+                logger.debug("\(logMessage, privacy: .private)")
+            case .public:
+                logger.debug("\(logMessage, privacy: .public)")
+            case .auto:
+                logger.debug("\(logMessage, privacy: .auto)")
+        }
+    }
+    
+    static func info(_ message: String, level: Level, privacy: Privacy = .public) {
+        let logger = Logger(subsystem: LogHelper.subsystem, category: level.category)
+        let logMessage = "\(message)"
+        
+        switch privacy {
+            case .privacy:
+                logger.info("\(logMessage, privacy: .private)")
+            case .public:
+                logger.info("\(logMessage, privacy: .public)")
+            case .auto:
+                logger.info("\(logMessage, privacy: .auto)")
+        }
+    }
+    
+    static func error(_ message: String, level: Level, privacy: Privacy = .public) {
+        let logger = Logger(subsystem: LogHelper.subsystem, category: level.category)
+        let logMessage = "\(message)"
+        
+        switch privacy {
+            case .privacy:
+                logger.error("\(logMessage, privacy: .private)")
+            case .public:
+                logger.error("\(logMessage, privacy: .public)")
+            case .auto:
+                logger.error("\(logMessage, privacy: .auto)")
+        }
+    }
+    
+    static func notice(_ message: String, level: Level, privacy: Privacy = .public) {
+        let logger = Logger(subsystem: LogHelper.subsystem, category: level.category)
+        let logMessage = "\(message)"
+        
+        switch privacy {
+            case .privacy:
+                logger.notice("\(logMessage, privacy: .private)")
+            case .public:
+                logger.notice("\(logMessage, privacy: .public)")
+            case .auto:
+                logger.notice("\(logMessage, privacy: .auto)")
+        }
+    }
+}
+
+// MARK: - LogHelper Enums
+
 extension LogHelper {
     enum Level {
         /// 디버깅 로그
