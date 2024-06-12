@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1735D3B24E5ED7BA9721DEBF /* Pods_ShowPot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 237C9CA98DB3D76F6E1F6613 /* Pods_ShowPot.framework */; };
+		70107B0A2C198E5100F32042 /* LogHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70107B092C198E5100F32042 /* LogHelper.swift */; };
 		7D1E5FAD2C0A20950012504D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1E5FAC2C0A20950012504D /* LoginViewController.swift */; };
 		7D1E5FAF2C0A20A10012504D /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1E5FAE2C0A20A10012504D /* LoginViewModel.swift */; };
 		7D1E5FB42C0A23700012504D /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1E5FB32C0A23700012504D /* AppCoordinator.swift */; };
@@ -42,6 +43,7 @@
 /* Begin PBXFileReference section */
 		237C9CA98DB3D76F6E1F6613 /* Pods_ShowPot.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShowPot.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6566CCB05E120BF4538DACBB /* Pods-ShowPot.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShowPot.release.xcconfig"; path = "Target Support Files/Pods-ShowPot/Pods-ShowPot.release.xcconfig"; sourceTree = "<group>"; };
+		70107B092C198E5100F32042 /* LogHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogHelper.swift; sourceTree = "<group>"; };
 		7D1E5FAC2C0A20950012504D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		7D1E5FAE2C0A20A10012504D /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		7D1E5FB32C0A23700012504D /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
@@ -223,6 +225,7 @@
 				7D2981192C01E91300A619FB /* Extension */,
 				7D2981182C01E90A00A619FB /* UI */,
 				7D3196412C133EC90015F88E /* Environment.swift */,
+				70107B092C198E5100F32042 /* LogHelper.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -547,6 +550,7 @@
 				7D2981042C01E1D000A619FB /* MainTabViewController.swift in Sources */,
 				7D29813D2C01F28100A619FB /* SampleResponse.swift in Sources */,
 				7D29811E2C01EB8A00A619FB /* BaseViewController.swift in Sources */,
+				70107B0A2C198E5100F32042 /* LogHelper.swift in Sources */,
 				7D29813F2C01F29200A619FB /* Sample+Extension.swift in Sources */,
 				7D1E5FBA2C0A28080012504D /* MainTabCoordinator.swift in Sources */,
 				7D3E962A2C061DA3003A6FA9 /* SampleAPI.swift in Sources */,
