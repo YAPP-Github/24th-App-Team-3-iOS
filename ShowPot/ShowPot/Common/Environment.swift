@@ -34,6 +34,11 @@ public enum Environment {
     static let googleClientID: String = {
         return Environment.value(key: "GOOGLE_CLIENT_ID")
     }()
+    
+    /// ShowPot 프로젝트에 해당하는 bundleID
+    static let bundleID: String = {
+        return Bundle.main.bundleIdentifier ?? "undefined"
+    }()
 
 }
 
