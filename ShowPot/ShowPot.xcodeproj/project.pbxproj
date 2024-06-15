@@ -24,6 +24,7 @@
 		70107B2A2C1D573900F32042 /* Oswald-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 70107B242C1D573900F32042 /* Oswald-Medium.ttf */; };
 		70107B2B2C1D573900F32042 /* Oswald-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 70107B252C1D573900F32042 /* Oswald-Regular.ttf */; };
 		70107B2C2C1D573900F32042 /* Oswald-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 70107B262C1D573900F32042 /* Oswald-SemiBold.ttf */; };
+		70107B302C1D58C500F32042 /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70107B2F2C1D58C500F32042 /* UIFont+Extension.swift */; };
 		7D1E5FAD2C0A20950012504D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1E5FAC2C0A20950012504D /* LoginViewController.swift */; };
 		7D1E5FAF2C0A20A10012504D /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1E5FAE2C0A20A10012504D /* LoginViewModel.swift */; };
 		7D1E5FB42C0A23700012504D /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1E5FB32C0A23700012504D /* AppCoordinator.swift */; };
@@ -74,6 +75,7 @@
 		70107B242C1D573900F32042 /* Oswald-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Oswald-Medium.ttf"; sourceTree = "<group>"; };
 		70107B252C1D573900F32042 /* Oswald-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Oswald-Regular.ttf"; sourceTree = "<group>"; };
 		70107B262C1D573900F32042 /* Oswald-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Oswald-SemiBold.ttf"; sourceTree = "<group>"; };
+		70107B2F2C1D58C500F32042 /* UIFont+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extension.swift"; sourceTree = "<group>"; };
 		7D1E5FAC2C0A20950012504D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		7D1E5FAE2C0A20A10012504D /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		7D1E5FB32C0A23700012504D /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
@@ -311,6 +313,7 @@
 			isa = PBXGroup;
 			children = (
 				7D29813E2C01F29200A619FB /* Sample+Extension.swift */,
+				70107B2F2C1D58C500F32042 /* UIFont+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -644,6 +647,7 @@
 				7D2981372C01F25B00A619FB /* APIService.swift in Sources */,
 				7D1E5FB62C0A23AB0012504D /* LoginCoordinator.swift in Sources */,
 				7D29813B2C01F27B00A619FB /* SampleRequest.swift in Sources */,
+				70107B302C1D58C500F32042 /* UIFont+Extension.swift in Sources */,
 				7D2981022C01E1D000A619FB /* SceneDelegate.swift in Sources */,
 				7D3196422C133EC90015F88E /* Environment.swift in Sources */,
 				7D3E96282C061CD2003A6FA9 /* SampleUseCase.swift in Sources */,
