@@ -9,7 +9,7 @@ import Foundation
 import os.log
 
 enum LogHelper {
-    private static let subsystem = Bundle.main.bundleIdentifier!
+    private static let subsystem = Environment.bundleID
     
     /// Logger의 debug 레벨에 해당하는 로그를 작성할때 사용하는 함수입니다.
     ///
