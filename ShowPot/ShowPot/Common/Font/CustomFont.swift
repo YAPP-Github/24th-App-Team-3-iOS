@@ -12,7 +12,7 @@ import Foundation
 /// 커스텀 폰트 종류
 enum CustomFont: String {
     case pretendard = "Pretendard"
-    case oswald = "oswald"
+    case oswald = "Oswald"
 }
 
 /// 커스텀 폰트의 스타일 종류
