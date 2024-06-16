@@ -8,45 +8,22 @@
 import UIKit
 
 extension UIFont {
-  
-  enum Pretendard: String {
     
-    // black
-    case black = "Pretendard-Black"
-    
-    // bold
-    case extraBold = "Pretendard-ExtraBold"
-    case bold = "Pretendard-Bold"
-    case semiBold = "Pretendard-SemiBold"
-    
-    // medium
-    case medium = "Pretendard-Medium"
-    
-    // regular
-    case regular = "Pretendard-Regular"
-    
-    // light
-    case light = "Pretendard-Light"
-    case extraLight = "Pretendard-ExtraLight"
-    
-    // thin
-    case thin = "Pretendard-Thin"
-  }
-  
-  enum Oswald: String {
-      
-      // light
-      case extraLight = "Oswald-ExtraLight"
-      case light = "Oswald-Light"
-      
-      // medium
-      case medium = "Oswald-Medium"
-      
-      // regular
-      case regular = "Oswald-Regular"
-      
-      // bold
-      case bold = "Oswald-Bold"
-      case semiBold = "Oswald-SemiBold"
-  }
+    /**
+     미리 정의된 `CustomFont` `CustomFontStyle` 열거형을 사용해 원하는 폰트를 가져온다
+     - Parameters:
+        - font: 폰트 종류  (*i.e.* Pretendard, Osward)
+        - style: 폰트 스타일 (*i.e* regular, semibold)
+        - size: 폰트 크기
+     - Returns: {font}-{style} 이름의 폰트가 있는 경우 해당 폰트 반환, 폰트가 없는 경우 기본 시스템 폰트 반환
+     */
+    static func customFont(font: CustomFont, style: CustomFontStyle, size: CGFloat) -> UIFont {
+        
+        let customFontName: String = "\(font.rawValue)-\(style.rawValue)"
+        guard let font = UIFont(name: customFontName, size: size) else {
+            return UIFont.systemFont(ofSize: size)
+        }
+        
+        return font
+    }
 }
