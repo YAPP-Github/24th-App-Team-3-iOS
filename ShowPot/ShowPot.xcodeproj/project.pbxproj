@@ -54,6 +54,10 @@
 		7D3E96282C061CD2003A6FA9 /* SampleUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3E96272C061CD2003A6FA9 /* SampleUseCase.swift */; };
 		7D3E962A2C061DA3003A6FA9 /* SampleAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3E96292C061DA3003A6FA9 /* SampleAPI.swift */; };
 		7D8574C12C187A1F0042F539 /* LoginViewHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D8574C02C187A1F0042F539 /* LoginViewHolder.swift */; };
+		7DEACE4C2C1ECC5200F37DA3 /* CustomFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DEACE4B2C1ECC5200F37DA3 /* CustomFont.swift */; };
+		7DEACE4E2C1ED00100F37DA3 /* LanguageFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DEACE4D2C1ED00100F37DA3 /* LanguageFont.swift */; };
+		7DEACE512C1ED95E00F37DA3 /* KRFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DEACE502C1ED95E00F37DA3 /* KRFont.swift */; };
+		7DEACE532C1ED96400F37DA3 /* ENFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DEACE522C1ED96400F37DA3 /* ENFont.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -109,6 +113,10 @@
 		7D3E96272C061CD2003A6FA9 /* SampleUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleUseCase.swift; sourceTree = "<group>"; };
 		7D3E96292C061DA3003A6FA9 /* SampleAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleAPI.swift; sourceTree = "<group>"; };
 		7D8574C02C187A1F0042F539 /* LoginViewHolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewHolder.swift; sourceTree = "<group>"; };
+		7DEACE4B2C1ECC5200F37DA3 /* CustomFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFont.swift; sourceTree = "<group>"; };
+		7DEACE4D2C1ED00100F37DA3 /* LanguageFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageFont.swift; sourceTree = "<group>"; };
+		7DEACE502C1ED95E00F37DA3 /* KRFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KRFont.swift; sourceTree = "<group>"; };
+		7DEACE522C1ED96400F37DA3 /* ENFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ENFont.swift; sourceTree = "<group>"; };
 		9C5E3FD03EE9C1E9E373BB01 /* Pods-ShowPot.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShowPot.debug.xcconfig"; path = "Target Support Files/Pods-ShowPot/Pods-ShowPot.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -297,6 +305,7 @@
 				7D2981182C01E90A00A619FB /* UI */,
 				7D3196412C133EC90015F88E /* Environment.swift */,
 				70107B092C198E5100F32042 /* LogHelper.swift */,
+				7DEACE4F2C1ED8EE00F37DA3 /* Font */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -495,6 +504,17 @@
 			path = ViewHolder;
 			sourceTree = "<group>";
 		};
+		7DEACE4F2C1ED8EE00F37DA3 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				7DEACE4B2C1ECC5200F37DA3 /* CustomFont.swift */,
+				7DEACE4D2C1ED00100F37DA3 /* LanguageFont.swift */,
+				7DEACE502C1ED95E00F37DA3 /* KRFont.swift */,
+				7DEACE522C1ED96400F37DA3 /* ENFont.swift */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
 		B7FDDD5BC531B3291F217534 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -636,11 +656,13 @@
 				7D1E5FAD2C0A20950012504D /* LoginViewController.swift in Sources */,
 				7D2981042C01E1D000A619FB /* MainTabViewController.swift in Sources */,
 				7D29813D2C01F28100A619FB /* SampleResponse.swift in Sources */,
+				7DEACE512C1ED95E00F37DA3 /* KRFont.swift in Sources */,
 				7D29811E2C01EB8A00A619FB /* BaseViewController.swift in Sources */,
 				70107B0A2C198E5100F32042 /* LogHelper.swift in Sources */,
 				7D29813F2C01F29200A619FB /* Sample+Extension.swift in Sources */,
 				7D1E5FBA2C0A28080012504D /* MainTabCoordinator.swift in Sources */,
 				7D3E962A2C061DA3003A6FA9 /* SampleAPI.swift in Sources */,
+				7DEACE4C2C1ECC5200F37DA3 /* CustomFont.swift in Sources */,
 				7D29812F2C01F23400A619FB /* SavedViewController.swift in Sources */,
 				7D8574C12C187A1F0042F539 /* LoginViewHolder.swift in Sources */,
 				7D2981002C01E1D000A619FB /* AppDelegate.swift in Sources */,
@@ -648,6 +670,7 @@
 				7D1E5FB62C0A23AB0012504D /* LoginCoordinator.swift in Sources */,
 				7D29813B2C01F27B00A619FB /* SampleRequest.swift in Sources */,
 				70107B302C1D58C500F32042 /* UIFont+Extension.swift in Sources */,
+				7DEACE532C1ED96400F37DA3 /* ENFont.swift in Sources */,
 				7D2981022C01E1D000A619FB /* SceneDelegate.swift in Sources */,
 				7D3196422C133EC90015F88E /* Environment.swift in Sources */,
 				7D3E96282C061CD2003A6FA9 /* SampleUseCase.swift in Sources */,
@@ -658,6 +681,7 @@
 				7D2981412C01F29D00A619FB /* SampleUI.swift in Sources */,
 				7D21953F2C143AAA00A38D2B /* ViewModelType.swift in Sources */,
 				7D2195412C143E8400A38D2B /* ViewHolderType.swift in Sources */,
+				7DEACE4E2C1ED00100F37DA3 /* LanguageFont.swift in Sources */,
 				7D29812B2C01F22300A619FB /* FeaturedViewController.swift in Sources */,
 				7D1E5FAF2C0A20A10012504D /* LoginViewModel.swift in Sources */,
 				7D2981332C01F24500A619FB /* SettingsViewController.swift in Sources */,
