@@ -29,9 +29,13 @@ class BaseViewController: UIViewController  {
     /// A dispose bag. 각 ViewController에 종속적이다.
     final let disposeBag = DisposeBag()
     
+    deinit {
+        LogHelper.debug("called \(self)")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // TODO: 로그 추가
+        LogHelper.debug("called \(self)")
         setupStyles()
         bind()
     }
