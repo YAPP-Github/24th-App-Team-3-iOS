@@ -9,8 +9,6 @@
 // 해당 파일에서 정의되는 값들은 앱 내부 Swift 프로퍼티와 구분하기 위해 대문자 snake-case 사용
 // e.g. EXAMPLE_VALUE
 
-#include "Pods/Target Support Files/Pods-ShowPot/Pods-ShowPot.release.xcconfig"
-
 // App project settings
 APP_NAME = ShowPot
 
