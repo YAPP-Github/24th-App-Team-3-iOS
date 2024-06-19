@@ -53,9 +53,6 @@
 		70107B702C216A4200F32042 /* KakaoSDKTalk in Frameworks */ = {isa = PBXBuildFile; productRef = 70107B6F2C216A4200F32042 /* KakaoSDKTalk */; };
 		70107B722C216A4200F32042 /* KakaoSDKTemplate in Frameworks */ = {isa = PBXBuildFile; productRef = 70107B712C216A4200F32042 /* KakaoSDKTemplate */; };
 		70107B742C216A4200F32042 /* KakaoSDKUser in Frameworks */ = {isa = PBXBuildFile; productRef = 70107B732C216A4200F32042 /* KakaoSDKUser */; };
-		70107B772C216B0300F32042 /* SwiftGenCLI in Frameworks */ = {isa = PBXBuildFile; productRef = 70107B762C216B0300F32042 /* SwiftGenCLI */; };
-		70107B792C216B0300F32042 /* SwiftGenKit in Frameworks */ = {isa = PBXBuildFile; productRef = 70107B782C216B0300F32042 /* SwiftGenKit */; };
-		70107B7B2C216B0300F32042 /* swiftgen in Frameworks */ = {isa = PBXBuildFile; productRef = 70107B7A2C216B0300F32042 /* swiftgen */; };
 		7D1E5FAD2C0A20950012504D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1E5FAC2C0A20950012504D /* LoginViewController.swift */; };
 		7D1E5FAF2C0A20A10012504D /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1E5FAE2C0A20A10012504D /* LoginViewModel.swift */; };
 		7D1E5FB42C0A23700012504D /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1E5FB32C0A23700012504D /* AppCoordinator.swift */; };
@@ -166,9 +163,7 @@
 				70107B3B2C2167E400F32042 /* RxCocoa in Frameworks */,
 				70107B702C216A4200F32042 /* KakaoSDKTalk in Frameworks */,
 				70107B742C216A4200F32042 /* KakaoSDKUser in Frameworks */,
-				70107B7B2C216B0300F32042 /* swiftgen in Frameworks */,
 				70107B662C216A4200F32042 /* KakaoSDKCommon in Frameworks */,
-				70107B772C216B0300F32042 /* SwiftGenCLI in Frameworks */,
 				70107B372C2167E400F32042 /* RxBlocking in Frameworks */,
 				70107B392C2167E400F32042 /* RxBlocking-Dynamic in Frameworks */,
 				70107B492C2167E400F32042 /* RxTest-Dynamic in Frameworks */,
@@ -178,7 +173,6 @@
 				70107B682C216A4200F32042 /* KakaoSDKFriend in Frameworks */,
 				70107B4E2C2167FB00F32042 /* SnapKit-Dynamic in Frameworks */,
 				70107B6E2C216A4200F32042 /* KakaoSDKShare in Frameworks */,
-				70107B792C216B0300F32042 /* SwiftGenKit in Frameworks */,
 				70107B6A2C216A4200F32042 /* KakaoSDKFriendCore in Frameworks */,
 				70107B5E2C216A4200F32042 /* KakaoSDK in Frameworks */,
 				70107B622C216A4200F32042 /* KakaoSDKCert in Frameworks */,
@@ -614,9 +608,6 @@
 				70107B6F2C216A4200F32042 /* KakaoSDKTalk */,
 				70107B712C216A4200F32042 /* KakaoSDKTemplate */,
 				70107B732C216A4200F32042 /* KakaoSDKUser */,
-				70107B762C216B0300F32042 /* SwiftGenCLI */,
-				70107B782C216B0300F32042 /* SwiftGenKit */,
-				70107B7A2C216B0300F32042 /* swiftgen */,
 			);
 			productName = ShowPot;
 			productReference = 7D2980FC2C01E1D000A619FB /* ShowPot.app */;
@@ -653,7 +644,7 @@
 				70107B522C21681600F32042 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				70107B572C21693E00F32042 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
 				70107B5C2C216A4200F32042 /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */,
-				70107B752C216B0300F32042 /* XCRemoteSwiftPackageReference "SwiftGen" */,
+				70107B8D2C22A76B00F32042 /* XCRemoteSwiftPackageReference "SwiftGenPlugin" */,
 			);
 			productRefGroup = 7D2980FD2C01E1D000A619FB /* Products */;
 			projectDirPath = "";
@@ -1001,12 +992,12 @@
 				minimumVersion = 2.22.2;
 			};
 		};
-		70107B752C216B0300F32042 /* XCRemoteSwiftPackageReference "SwiftGen" */ = {
+		70107B8D2C22A76B00F32042 /* XCRemoteSwiftPackageReference "SwiftGenPlugin" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/SwiftGen/SwiftGen";
+			repositoryURL = "https://github.com/SwiftGen/SwiftGenPlugin";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 6.6.3;
+				minimumVersion = 6.6.2;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
@@ -1156,21 +1147,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 70107B5C2C216A4200F32042 /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */;
 			productName = KakaoSDKUser;
-		};
-		70107B762C216B0300F32042 /* SwiftGenCLI */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 70107B752C216B0300F32042 /* XCRemoteSwiftPackageReference "SwiftGen" */;
-			productName = SwiftGenCLI;
-		};
-		70107B782C216B0300F32042 /* SwiftGenKit */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 70107B752C216B0300F32042 /* XCRemoteSwiftPackageReference "SwiftGen" */;
-			productName = SwiftGenKit;
-		};
-		70107B7A2C216B0300F32042 /* swiftgen */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 70107B752C216B0300F32042 /* XCRemoteSwiftPackageReference "SwiftGen" */;
-			productName = swiftgen;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
