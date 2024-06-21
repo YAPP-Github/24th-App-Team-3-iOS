@@ -183,13 +183,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4DB9015F372058C1A94EF3BF /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
 		70107B0E2C1D53DA00F32042 /* Font */ = {
 			isa = PBXGroup;
 			children = (
@@ -280,7 +273,6 @@
 			children = (
 				7D2980FE2C01E1D000A619FB /* ShowPot */,
 				7D2980FD2C01E1D000A619FB /* Products */,
-				4DB9015F372058C1A94EF3BF /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
