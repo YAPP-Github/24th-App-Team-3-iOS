@@ -39,6 +39,8 @@
 		70107B702C216A4200F32042 /* KakaoSDKTalk in Frameworks */ = {isa = PBXBuildFile; productRef = 70107B6F2C216A4200F32042 /* KakaoSDKTalk */; };
 		70107B722C216A4200F32042 /* KakaoSDKTemplate in Frameworks */ = {isa = PBXBuildFile; productRef = 70107B712C216A4200F32042 /* KakaoSDKTemplate */; };
 		70107B742C216A4200F32042 /* KakaoSDKUser in Frameworks */ = {isa = PBXBuildFile; productRef = 70107B732C216A4200F32042 /* KakaoSDKUser */; };
+		7D1092262C26F36800498C87 /* FlexLayout in Frameworks */ = {isa = PBXBuildFile; productRef = 7D1092252C26F36800498C87 /* FlexLayout */; };
+		7D1092292C26F38800498C87 /* PinLayout in Frameworks */ = {isa = PBXBuildFile; productRef = 7D1092282C26F38800498C87 /* PinLayout */; };
 		7D1E5FAD2C0A20950012504D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1E5FAC2C0A20950012504D /* LoginViewController.swift */; };
 		7D1E5FAF2C0A20A10012504D /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1E5FAE2C0A20A10012504D /* LoginViewModel.swift */; };
 		7D1E5FB42C0A23700012504D /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1E5FB32C0A23700012504D /* AppCoordinator.swift */; };
@@ -139,6 +141,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D1092262C26F36800498C87 /* FlexLayout in Frameworks */,
 				7D2DCABE2C269C2100389FBF /* RxRelay in Frameworks */,
 				70107B592C21693E00F32042 /* GoogleSignIn in Frameworks */,
 				70107B602C216A4200F32042 /* KakaoSDKAuth in Frameworks */,
@@ -150,6 +153,7 @@
 				70107B742C216A4200F32042 /* KakaoSDKUser in Frameworks */,
 				7D2DCAC32C269C2E00389FBF /* SnapKit in Frameworks */,
 				70107B662C216A4200F32042 /* KakaoSDKCommon in Frameworks */,
+				7D1092292C26F38800498C87 /* PinLayout in Frameworks */,
 				70107B6C2C216A4200F32042 /* KakaoSDKNavi in Frameworks */,
 				7D2DCABC2C269C2100389FBF /* RxCocoa in Frameworks */,
 				7D2DCAB92C269BF700389FBF /* Alamofire in Frameworks */,
@@ -573,6 +577,8 @@
 				7D2DCABD2C269C2100389FBF /* RxRelay */,
 				7D2DCABF2C269C2100389FBF /* RxSwift */,
 				7D2DCAC22C269C2E00389FBF /* SnapKit */,
+				7D1092252C26F36800498C87 /* FlexLayout */,
+				7D1092282C26F38800498C87 /* PinLayout */,
 			);
 			productName = ShowPot;
 			productReference = 7D2980FC2C01E1D000A619FB /* ShowPot.app */;
@@ -610,6 +616,8 @@
 				7D2DCAB72C269BF700389FBF /* XCRemoteSwiftPackageReference "Alamofire" */,
 				7D2DCABA2C269C2100389FBF /* XCRemoteSwiftPackageReference "RxSwift" */,
 				7D2DCAC12C269C2E00389FBF /* XCRemoteSwiftPackageReference "SnapKit" */,
+				7D1092242C26F36800498C87 /* XCRemoteSwiftPackageReference "FlexLayout" */,
+				7D1092272C26F38800498C87 /* XCRemoteSwiftPackageReference "PinLayout" */,
 			);
 			productRefGroup = 7D2980FD2C01E1D000A619FB /* Products */;
 			projectDirPath = "";
@@ -941,6 +949,22 @@
 				minimumVersion = 6.6.2;
 			};
 		};
+		7D1092242C26F36800498C87 /* XCRemoteSwiftPackageReference "FlexLayout" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/layoutBox/FlexLayout.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.9;
+			};
+		};
+		7D1092272C26F38800498C87 /* XCRemoteSwiftPackageReference "PinLayout" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/layoutBox/PinLayout";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.10.5;
+			};
+		};
 		7D2DCAB72C269BF700389FBF /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
@@ -1042,6 +1066,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 70107B5C2C216A4200F32042 /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */;
 			productName = KakaoSDKUser;
+		};
+		7D1092252C26F36800498C87 /* FlexLayout */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7D1092242C26F36800498C87 /* XCRemoteSwiftPackageReference "FlexLayout" */;
+			productName = FlexLayout;
+		};
+		7D1092282C26F38800498C87 /* PinLayout */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7D1092272C26F38800498C87 /* XCRemoteSwiftPackageReference "PinLayout" */;
+			productName = PinLayout;
 		};
 		7D2DCAB82C269BF700389FBF /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
