@@ -1,0 +1,12 @@
+input_dir: ShowPot/Resource
+output_dir: ShowPot/Resource
+
+strings:
+  inputs:
+    - Localizable/Localizable.strings
+  outputs:
+    - templateName: structured-swift5
+      output: Localizable/Strings+Generated.swift
+      params:
+        publicAccess: true
+        enumName: Strings
