@@ -618,7 +618,6 @@
 				70107B4F2C21680400F32042 /* XCRemoteSwiftPackageReference "Then" */,
 				70107B572C21693E00F32042 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
 				70107B5C2C216A4200F32042 /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */,
-				70107B8D2C22A76B00F32042 /* XCRemoteSwiftPackageReference "SwiftGenPlugin" */,
 				7D2DCAB72C269BF700389FBF /* XCRemoteSwiftPackageReference "Alamofire" */,
 				7D2DCABA2C269C2100389FBF /* XCRemoteSwiftPackageReference "RxSwift" */,
 				7D2DCAC12C269C2E00389FBF /* XCRemoteSwiftPackageReference "SnapKit" */,
@@ -947,14 +946,6 @@
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 2.22.2;
-			};
-		};
-		70107B8D2C22A76B00F32042 /* XCRemoteSwiftPackageReference "SwiftGenPlugin" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/SwiftGen/SwiftGenPlugin";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 6.6.2;
 			};
 		};
 		7D1092242C26F36800498C87 /* XCRemoteSwiftPackageReference "FlexLayout" */ = {
