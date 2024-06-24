@@ -73,6 +73,8 @@
 		7D3196422C133EC90015F88E /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3196412C133EC90015F88E /* Environment.swift */; };
 		7D3E96282C061CD2003A6FA9 /* SampleUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3E96272C061CD2003A6FA9 /* SampleUseCase.swift */; };
 		7D3E962A2C061DA3003A6FA9 /* SampleAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3E96292C061DA3003A6FA9 /* SampleAPI.swift */; };
+		7D8255A52C295DF100D104BE /* swiftgen.yml in Resources */ = {isa = PBXBuildFile; fileRef = 7D8255A42C295DF100D104BE /* swiftgen.yml */; };
+		7D8255A72C295E3A00D104BE /* Strings+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D8255A62C295E3A00D104BE /* Strings+Generated.swift */; };
 		7D8574C12C187A1F0042F539 /* LoginViewHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D8574C02C187A1F0042F539 /* LoginViewHolder.swift */; };
 		7DEACE4C2C1ECC5200F37DA3 /* CustomFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DEACE4B2C1ECC5200F37DA3 /* CustomFont.swift */; };
 		7DEACE4E2C1ED00100F37DA3 /* LanguageFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DEACE4D2C1ED00100F37DA3 /* LanguageFont.swift */; };
@@ -129,6 +131,8 @@
 		7D3196412C133EC90015F88E /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 		7D3E96272C061CD2003A6FA9 /* SampleUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleUseCase.swift; sourceTree = "<group>"; };
 		7D3E96292C061DA3003A6FA9 /* SampleAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleAPI.swift; sourceTree = "<group>"; };
+		7D8255A42C295DF100D104BE /* swiftgen.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = swiftgen.yml; sourceTree = "<group>"; };
+		7D8255A62C295E3A00D104BE /* Strings+Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Strings+Generated.swift"; sourceTree = "<group>"; };
 		7D8574C02C187A1F0042F539 /* LoginViewHolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewHolder.swift; sourceTree = "<group>"; };
 		7DEACE4B2C1ECC5200F37DA3 /* CustomFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFont.swift; sourceTree = "<group>"; };
 		7DEACE4D2C1ED00100F37DA3 /* LanguageFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageFont.swift; sourceTree = "<group>"; };
@@ -257,6 +261,7 @@
 		7D2980F32C01E1D000A619FB = {
 			isa = PBXGroup;
 			children = (
+				7D8255A42C295DF100D104BE /* swiftgen.yml */,
 				7D2980FE2C01E1D000A619FB /* ShowPot */,
 				7D2980FD2C01E1D000A619FB /* Products */,
 			);
@@ -356,6 +361,7 @@
 			isa = PBXGroup;
 			children = (
 				7D2981422C01F2C200A619FB /* Localizable.strings */,
+				7D8255A62C295E3A00D104BE /* Strings+Generated.swift */,
 			);
 			path = Localizable;
 			sourceTree = "<group>";
@@ -639,6 +645,7 @@
 				70107B282C1D573900F32042 /* Oswald-Light.ttf in Resources */,
 				70107B1C2C1D53FB00F32042 /* Pretendard-ExtraBold.otf in Resources */,
 				70107B2B2C1D573900F32042 /* Oswald-Regular.ttf in Resources */,
+				7D8255A52C295DF100D104BE /* swiftgen.yml in Resources */,
 				70107B2A2C1D573900F32042 /* Oswald-Medium.ttf in Resources */,
 				70107B202C1D53FB00F32042 /* Pretendard-Thin.otf in Resources */,
 				70107B192C1D53FB00F32042 /* Pretendard-Medium.otf in Resources */,
@@ -683,6 +690,7 @@
 				7D3E96282C061CD2003A6FA9 /* SampleUseCase.swift in Sources */,
 				7D1E5FB42C0A23700012504D /* AppCoordinator.swift in Sources */,
 				7D2981352C01F25100A619FB /* SettingViewModel.swift in Sources */,
+				7D8255A72C295E3A00D104BE /* Strings+Generated.swift in Sources */,
 				7D29812D2C01F22B00A619FB /* FeaturedViewModel.swift in Sources */,
 				7D2981312C01F23C00A619FB /* SavedViewModel.swift in Sources */,
 				7D2981412C01F29D00A619FB /* SampleUI.swift in Sources */,
