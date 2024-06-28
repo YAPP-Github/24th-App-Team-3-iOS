@@ -211,39 +211,15 @@
 			path = Pretendard;
 			sourceTree = "<group>";
 		};
-		7D1E5FB02C0A20A50012504D /* ViewController */ = {
-			isa = PBXGroup;
-			children = (
-				7D1E5FAC2C0A20950012504D /* LoginViewController.swift */,
-			);
-			path = ViewController;
-			sourceTree = "<group>";
-		};
-		7D1E5FB12C0A20AE0012504D /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				7D1E5FAE2C0A20A10012504D /* LoginViewModel.swift */,
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
 		7D1E5FB22C0A20BB0012504D /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				7D1E5FB02C0A20A50012504D /* ViewController */,
-				7D1E5FB12C0A20AE0012504D /* ViewModel */,
-				7D1E5FB72C0A23B20012504D /* Coordinator */,
-				7D8574C22C187A230042F539 /* ViewHolder */,
+				7D1E5FAC2C0A20950012504D /* LoginViewController.swift */,
+				7D1E5FAE2C0A20A10012504D /* LoginViewModel.swift */,
+				7D1E5FB52C0A23AB0012504D /* LoginCoordinator.swift */,
+				7D8574C02C187A1F0042F539 /* LoginViewHolder.swift */,
 			);
 			path = Login;
-			sourceTree = "<group>";
-		};
-		7D1E5FB72C0A23B20012504D /* Coordinator */ = {
-			isa = PBXGroup;
-			children = (
-				7D1E5FB52C0A23AB0012504D /* LoginCoordinator.swift */,
-			);
-			path = Coordinator;
 			sourceTree = "<group>";
 		};
 		7D1E5FB82C0A27F30012504D /* Tab */ = {
@@ -388,76 +364,28 @@
 		7D29811F2C01EC0C00A619FB /* Featured */ = {
 			isa = PBXGroup;
 			children = (
-				7D2981202C01EC2200A619FB /* ViewController */,
-				7D2981212C01EC2800A619FB /* ViewModel */,
-			);
-			path = Featured;
-			sourceTree = "<group>";
-		};
-		7D2981202C01EC2200A619FB /* ViewController */ = {
-			isa = PBXGroup;
-			children = (
 				7D29812A2C01F22300A619FB /* FeaturedViewController.swift */,
-			);
-			path = ViewController;
-			sourceTree = "<group>";
-		};
-		7D2981212C01EC2800A619FB /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
 				7D29812C2C01F22B00A619FB /* FeaturedViewModel.swift */,
 			);
-			path = ViewModel;
+			path = Featured;
 			sourceTree = "<group>";
 		};
 		7D2981222C01EC3B00A619FB /* Saved */ = {
 			isa = PBXGroup;
 			children = (
-				7D2981242C01EC4900A619FB /* ViewController */,
-				7D2981232C01EC4400A619FB /* ViewModel */,
-			);
-			path = Saved;
-			sourceTree = "<group>";
-		};
-		7D2981232C01EC4400A619FB /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
+				7D29812E2C01F23400A619FB /* SavedViewController.swift */,
 				7D2981302C01F23C00A619FB /* SavedViewModel.swift */,
 			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		7D2981242C01EC4900A619FB /* ViewController */ = {
-			isa = PBXGroup;
-			children = (
-				7D29812E2C01F23400A619FB /* SavedViewController.swift */,
-			);
-			path = ViewController;
+			path = Saved;
 			sourceTree = "<group>";
 		};
 		7D2981252C01EC5200A619FB /* Settings */ = {
 			isa = PBXGroup;
 			children = (
-				7D2981272C01EC5B00A619FB /* ViewController */,
-				7D2981262C01EC5700A619FB /* ViewModel */,
-			);
-			path = Settings;
-			sourceTree = "<group>";
-		};
-		7D2981262C01EC5700A619FB /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
+				7D2981322C01F24500A619FB /* SettingsViewController.swift */,
 				7D2981342C01F25100A619FB /* SettingViewModel.swift */,
 			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		7D2981272C01EC5B00A619FB /* ViewController */ = {
-			isa = PBXGroup;
-			children = (
-				7D2981322C01F24500A619FB /* SettingsViewController.swift */,
-			);
-			path = ViewController;
+			path = Settings;
 			sourceTree = "<group>";
 		};
 		7D2981282C01ECC400A619FB /* Entity */ = {
@@ -525,14 +453,6 @@
 				7D3E96272C061CD2003A6FA9 /* SampleUseCase.swift */,
 			);
 			path = UseCase;
-			sourceTree = "<group>";
-		};
-		7D8574C22C187A230042F539 /* ViewHolder */ = {
-			isa = PBXGroup;
-			children = (
-				7D8574C02C187A1F0042F539 /* LoginViewHolder.swift */,
-			);
-			path = ViewHolder;
 			sourceTree = "<group>";
 		};
 		7DEACE4F2C1ED8EE00F37DA3 /* Font */ = {
