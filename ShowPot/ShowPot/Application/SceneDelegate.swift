@@ -21,10 +21,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         self.window = window
         
         let navigationController = UINavigationController()
-        window.rootViewController = navigationController
+        window.rootViewController = FeaturedViewController()
         
-        let coordinator = AppCoordinator(navigationController: navigationController)
-        coordinator.start()
+//        let coordinator = AppCoordinator(navigationController: navigationController)
+//        coordinator.start()
     }
     
     func sceneDidDisconnect(_ scene: UIScene) {
