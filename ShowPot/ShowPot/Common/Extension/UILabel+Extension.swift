@@ -49,14 +49,16 @@ extension UILabel {
     func setLineHeightAndLetterSpacingForFont() {
         guard let currentText = self.text, let fontName = self.font?.fontName.split(separator: "-")[0] else { return }
         
-        let lineHeightMultiple: CGFloat = 1.5
+        var lineHeightMultiple: CGFloat = 0.0
         var letterSpacing: CGFloat = 0.0
         
         switch fontName {
         case CustomFont.pretendard.rawValue:
-            letterSpacing = -0.025
+            lineHeightMultiple = KRFont.lineHeight
+            letterSpacing = KRFont.letterSpacing
         case CustomFont.oswald.rawValue:
-            letterSpacing = 0.0
+            lineHeightMultiple = ENFont.lineHeight
+            letterSpacing = ENFont.letterSpacing
         default:
             LogHelper.error("유효한 폰트종류가 아닙니다, 적용된 폰트이름을 확인해주세요.")
             return
