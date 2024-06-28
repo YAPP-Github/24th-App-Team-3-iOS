@@ -33,7 +33,7 @@ extension UILabel {
     ///   - string: UILabel에 설정할 텍스트
     func setLetterSpacing(letterSpacingPercent: CGFloat, string: String) {
         // Calculate the actual letter spacing from the percentage
-        let letterSpacing = letterSpacingPercent * UIFont.systemFont(ofSize: self.font.pointSize).pointSize
+        let letterSpacing = letterSpacingPercent * self.font.pointSize
         
         let attributedString = NSAttributedString(
             string: string,
@@ -47,7 +47,8 @@ extension UILabel {
     
     /// UILabel의 줄 높이와 자간을 폰트에 따라 설정합니다.
     func setLineHeightAndLetterSpacingForFont() {
-        guard let currentText = self.text, let fontName = self.font?.fontName.split(separator: "-")[0] else { return }
+        guard let currentText = self.text,
+              let fontName = self.font?.fontName.split(separator: "-")[0] else { return }
         
         var lineHeightMultiple: CGFloat = 0.0
         var letterSpacing: CGFloat = 0.0
@@ -55,10 +56,10 @@ extension UILabel {
         switch fontName {
         case CustomFont.pretendard.rawValue:
             lineHeightMultiple = KRFont.lineHeight
-            letterSpacing = KRFont.letterSpacing
+            letterSpacing = KRFont.letterSpacing * self.font.pointSize
         case CustomFont.oswald.rawValue:
             lineHeightMultiple = ENFont.lineHeight
-            letterSpacing = ENFont.letterSpacing
+            letterSpacing = ENFont.letterSpacing * self.font.pointSize
         default:
             LogHelper.error("유효한 폰트종류가 아닙니다, 적용된 폰트이름을 확인해주세요.")
             return
