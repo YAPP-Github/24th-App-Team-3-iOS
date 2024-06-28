@@ -18,92 +18,107 @@ final class FeaturedViewController: UIViewController {
     
     private let label1 = UILabel().then {
         $0.textColor = .black
-        $0.text = "H0폰트 텍스트입니다."
+//        $0.text = "H0폰트 텍스트입니다."
         $0.font = KRFont.H0
+        $0.setLineHeightAndLetterSpacing(lineHeightMultiple: 1.5, letterSpacingPercent: -0.025, string: "H0폰트 텍스트입니다.")
     }
     
     private let label2 = UILabel().then {
         $0.textColor = .black
-        $0.text = "H1폰트 텍스트입니다."
+//        $0.text = "H1폰트 텍스트입니다."
         $0.font = KRFont.H1
+        $0.setLineHeightAndLetterSpacing(lineHeightMultiple: 1.5, letterSpacingPercent: -0.025, string: "H1폰트 텍스트입니다.")
     }
     
     private let label3 = UILabel().then {
         $0.textColor = .black
-        $0.text = "H2폰트 텍스트입니다."
+//        $0.text = "H2폰트 텍스트입니다."
         $0.font = KRFont.H2
+        $0.setLineHeightAndLetterSpacing(lineHeightMultiple: 1.5, letterSpacingPercent: -0.025, string: "H2폰트 텍스트입니다.")
     }
     
     private let label4 = UILabel().then {
         $0.textColor = .black
-        $0.text = "B1_regular폰트 텍스트입니다."
+//        $0.text = "B1_regular폰트 텍스트입니다."
         $0.font = KRFont.B1_regular
+        $0.setLineHeightAndLetterSpacing(lineHeightMultiple: 1.5, letterSpacingPercent: -0.025, string: "B1_regular폰트 텍스트입니다.")
     }
     
     private let label5 = UILabel().then {
         $0.textColor = .black
-        $0.text = "B1_semibold폰트 텍스트입니다."
+//        $0.text = "B1_semibold폰트 텍스트입니다."
         $0.font = KRFont.B1_semibold
+        $0.setLineHeightAndLetterSpacing(lineHeightMultiple: 1.5, letterSpacingPercent: -0.025, string: "B1_semibold폰트 텍스트입니다.")
     }
     
     private let label111 = UILabel().then {
         $0.textColor = .black
-        $0.text = "This is H0 font"
+//        $0.text = "This is H0 font"
         $0.font = ENFont.H0
+        $0.setLineHeightAndLetterSpacing(lineHeightMultiple: 1.5, letterSpacingPercent: 0, string: "This is H0 font")
     }
     
     private let label222 = UILabel().then {
         $0.textColor = .black
-        $0.text = "This is H1 font"
+//        $0.text = "This is H1 font"
         $0.font = ENFont.H1
+        $0.setLineHeightAndLetterSpacing(lineHeightMultiple: 1.5, letterSpacingPercent: 0, string: "This is H1 font")
     }
     
     private let label333 = UILabel().then {
         $0.textColor = .black
-        $0.text = "This is H2 font"
+//        $0.text = "This is H2 font"
         $0.font = ENFont.H2
+        $0.setLineHeightAndLetterSpacing(lineHeightMultiple: 1.5, letterSpacingPercent: 0, string: "This is H2 font")
     }
     
     private let label444 = UILabel().then {
         $0.textColor = .black
-        $0.text = "This is H3 font"
+//        $0.text = "This is H3 font"
         $0.font = ENFont.H3
+        $0.setLineHeightAndLetterSpacing(lineHeightMultiple: 1.5, letterSpacingPercent: 0, string: "This is H3 font")
     }
     
     private let label555 = UILabel().then {
         $0.textColor = .black
-        $0.text = "This is H4 font"
+//        $0.text = "This is H4 font"
         $0.font = ENFont.H4
+        $0.setLineHeightAndLetterSpacing(lineHeightMultiple: 1.5, letterSpacingPercent: 0, string: "This is H4 font")
     }
     
     private let label666 = UILabel().then {
         $0.textColor = .black
-        $0.text = "This is H5 font"
+//        $0.text = "This is H5 font"
         $0.font = ENFont.H5
+        $0.setLineHeightAndLetterSpacing(lineHeightMultiple: 1.5, letterSpacingPercent: 0, string: "This is H5 font")
     }
     
     private let label6 = UILabel().then {
         $0.textColor = .black
-        $0.text = "B2_regular폰트 텍스트입니다."
+//        $0.text = "B2_regular폰트 텍스트입니다."
         $0.font = KRFont.B2_regular
+        $0.setLineHeightAndLetterSpacing(lineHeightMultiple: 1.5, letterSpacingPercent: -0.025, string: "B2_regular폰트 텍스트입니다.")
     }
     
     private let label7 = UILabel().then {
         $0.textColor = .black
-        $0.text = "B2_semibold폰트 텍스트입니다."
+//        $0.text = "B2_semibold폰트 텍스트입니다."
         $0.font = KRFont.B2_semibold
+        $0.setLineHeightAndLetterSpacing(lineHeightMultiple: 1.5, letterSpacingPercent: -0.025, string: "B2_semibold폰트 텍스트입니다.")
     }
     
     private let label8 = UILabel().then {
         $0.textColor = .black
-        $0.text = "B3_regular폰트 텍스트입니다."
+//        $0.text = "B3_regular폰트 텍스트입니다."
         $0.font = KRFont.B3_regular
+        $0.setLineHeightAndLetterSpacing(lineHeightMultiple: 1.5, letterSpacingPercent: -0.025, string: "B3_regular폰트 텍스트입니다.")
     }
     
     private let label9 = UILabel().then {
         $0.textColor = .black
-        $0.text = "B3_semibold폰트 텍스트입니다."
+//        $0.text = "B3_semibold폰트 텍스트입니다."
         $0.font = KRFont.B3_semibold
+        $0.setLineHeightAndLetterSpacing(lineHeightMultiple: 1.5, letterSpacingPercent: -0.025, string: "B3_semibold폰트 텍스트입니다.")
     }
     
     private let colorView1 = UIView().then {
@@ -341,4 +356,25 @@ final class FeaturedViewController: UIViewController {
         }
     }
     
+}
+
+extension UILabel {
+  
+    func setLineHeightAndLetterSpacing(lineHeightMultiple: CGFloat, letterSpacingPercent: CGFloat, string: String) {
+        let paragraphStyle = NSMutableParagraphStyle()
+        paragraphStyle.lineHeightMultiple = lineHeightMultiple
+
+        // Calculate the actual letter spacing from the percentage
+        let letterSpacing = letterSpacingPercent * UIFont.systemFont(ofSize: self.font.pointSize).pointSize
+        
+        let attributedString = NSAttributedString(
+          string: string,
+          attributes: [
+            .paragraphStyle: paragraphStyle,
+            .kern: letterSpacing
+          ]
+        )
+        
+        self.attributedText = attributedString
+      }
 }
