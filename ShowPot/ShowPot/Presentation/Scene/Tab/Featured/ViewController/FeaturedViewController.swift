@@ -174,99 +174,131 @@ final class FeaturedViewController: UIViewController {
     }
     private let imageView1 = UIImageView().then {
         $0.image = UIImage(resource: .icAlarm24Cancel)
+        $0.contentMode = .scaleAspectFit
     }
     private let imageView2 = UIImageView().then {
         $0.image = UIImage(resource: .icAlarm24Defalut)
+        $0.contentMode = .scaleAspectFit
     }
     private let imageView3 = UIImageView().then {
         $0.image = UIImage(resource: .icAlarm24Plus)
+        $0.contentMode = .scaleAspectFit
     }
     private let imageView4 = UIImageView().then {
         $0.image = UIImage(resource: .icAlarmCancel36)
+        $0.contentMode = .scaleAspectFit
     }
     private let imageView5 = UIImageView().then {
         $0.image = UIImage(resource: .icAlarmPlus36)
+        $0.contentMode = .scaleAspectFit
     }
     private let imageView6 = UIImageView().then {
         $0.image = UIImage(resource: .icArrow16Right)
+        $0.contentMode = .scaleAspectFit
     }
     private let imageView7 = UIImageView().then {
         $0.image = UIImage(resource: .icArrow24Down)
+        $0.contentMode = .scaleAspectFit
     }
     private let imageView8 = UIImageView().then {
         $0.image = UIImage(resource: .icArrow24Left)
+        $0.contentMode = .scaleAspectFit
     }
     private let imageView9 = UIImageView().then {
         $0.image = UIImage(resource: .icArrow24Right)
+        $0.contentMode = .scaleAspectFit
     }
     private let imageView10 = UIImageView().then {
         $0.image = UIImage(resource: .icArrow24Up)
+        $0.contentMode = .scaleAspectFit
     }
     private let imageView11 = UIImageView().then {
         $0.image = UIImage(resource: .icArrow36Down)
+        $0.contentMode = .scaleAspectFit
     }
     private let imageView12 = UIImageView().then {
         $0.image = UIImage(resource: .icArrow36Left)
+        $0.contentMode = .scaleAspectFit
     }
     private let imageView13 = UIImageView().then {
         $0.image = UIImage(resource: .icArrow36Right)
+        $0.contentMode = .scaleAspectFit
     }
     private let imageView14 = UIImageView().then {
         $0.image = UIImage(resource: .icArrow36Up)
+        $0.contentMode = .scaleAspectFit
     }
     private let imageView15 = UIImageView().then {
         $0.image = UIImage(resource: .icCancel36)
+        $0.contentMode = .scaleAspectFit
     }
     private let imageView16 = UIImageView().then {
         $0.image = UIImage(resource: .icCheck24)
+        $0.contentMode = .scaleAspectFit
     }
     private let imageView17 = UIImageView().then {
         $0.image = UIImage(resource: .icCheck36)
+        $0.contentMode = .scaleAspectFit
     }
     private let imageView18 = UIImageView().then {
         $0.image = UIImage(resource: .icCheck48)
+        $0.contentMode = .scaleAspectFit
     }
     private let imageView19 = UIImageView().then {
         $0.image = UIImage(resource: .icDelete24)
+        $0.contentMode = .scaleAspectFit
     }
     private let imageView20 = UIImageView().then {
         $0.image = UIImage(resource: .icDelete36)
+        $0.contentMode = .scaleAspectFit
     }
     private let imageView21 = UIImageView().then {
         $0.image = UIImage(resource: .icDelete48)
+        $0.contentMode = .scaleAspectFit
     }
     private let imageView22 = UIImageView().then {
         $0.image = UIImage(resource: .icEdit24)
+        $0.contentMode = .scaleAspectFit
     }
     private let imageView23 = UIImageView().then {
         $0.image = UIImage(resource: .icFilter36)
+        $0.contentMode = .scaleAspectFit
     }
     private let imageView24 = UIImageView().then {
         $0.image = UIImage(resource: .icHeart24)
+        $0.contentMode = .scaleAspectFit
     }
     private let imageView25 = UIImageView().then {
         $0.image = UIImage(resource: .icHeart36Off)
+        $0.contentMode = .scaleAspectFit
     }
     private let imageView26 = UIImageView().then {
         $0.image = UIImage(resource: .icHeart36On)
+        $0.contentMode = .scaleAspectFit
     }
     private let imageView27 = UIImageView().then {
         $0.image = UIImage(resource: .icMagnifier24)
+        $0.contentMode = .scaleAspectFit
     }
     private let imageView28 = UIImageView().then {
         $0.image = UIImage(resource: .icMagnifier36)
+        $0.contentMode = .scaleAspectFit
     }
     private let imageView29 = UIImageView().then {
         $0.image = UIImage(resource: .icPlus24)
+        $0.contentMode = .scaleAspectFit
     }
     private let imageView30 = UIImageView().then {
         $0.image = UIImage(resource: .icPlus36)
+        $0.contentMode = .scaleAspectFit
     }
     private let imageView31 = UIImageView().then {
         $0.image = UIImage(resource: .icProfile24)
+        $0.contentMode = .scaleAspectFit
     }
     private let imageView32 = UIImageView().then {
         $0.image = UIImage(resource: .icSetting36)
+        $0.contentMode = .scaleAspectFit
     }
     
     override func viewDidLayoutSubviews() {
@@ -318,38 +350,38 @@ final class FeaturedViewController: UIViewController {
             }
             
             $0.addItem().direction(.row).wrap(.wrap).define {
-                $0.addItem(imageView1).size(.init(width: 80, height: 80))
-                $0.addItem(imageView2).size(.init(width: 80, height: 80))
-                $0.addItem(imageView3).size(.init(width: 80, height: 80))
-                $0.addItem(imageView4).size(.init(width: 80, height: 80))
-                $0.addItem(imageView5).size(.init(width: 80, height: 80))
-                $0.addItem(imageView6).size(.init(width: 80, height: 80))
-                $0.addItem(imageView7).size(.init(width: 80, height: 80))
-                $0.addItem(imageView8).size(.init(width: 80, height: 80))
-                $0.addItem(imageView9).size(.init(width: 80, height: 80))
-                $0.addItem(imageView10).size(.init(width: 80, height: 80))
-                $0.addItem(imageView11).size(.init(width: 80, height: 80))
-                $0.addItem(imageView12).size(.init(width: 80, height: 80))
-                $0.addItem(imageView13).size(.init(width: 80, height: 80))
-                $0.addItem(imageView14).size(.init(width: 80, height: 80))
-                $0.addItem(imageView15).size(.init(width: 80, height: 80))
-                $0.addItem(imageView16).size(.init(width: 80, height: 80))
-                $0.addItem(imageView17).size(.init(width: 80, height: 80))
-                $0.addItem(imageView18).size(.init(width: 80, height: 80))
-                $0.addItem(imageView19).size(.init(width: 80, height: 80))
-                $0.addItem(imageView20).size(.init(width: 80, height: 80))
-                $0.addItem(imageView21).size(.init(width: 80, height: 80))
-                $0.addItem(imageView22).size(.init(width: 80, height: 80))
-                $0.addItem(imageView23).size(.init(width: 80, height: 80))
-                $0.addItem(imageView24).size(.init(width: 80, height: 80))
-                $0.addItem(imageView25).size(.init(width: 80, height: 80))
-                $0.addItem(imageView26).size(.init(width: 80, height: 80))
-                $0.addItem(imageView27).size(.init(width: 80, height: 80))
-                $0.addItem(imageView28).size(.init(width: 80, height: 80))
-                $0.addItem(imageView29).size(.init(width: 80, height: 80))
-                $0.addItem(imageView30).size(.init(width: 80, height: 80))
-                $0.addItem(imageView31).size(.init(width: 80, height: 80))
-                $0.addItem(imageView32).size(.init(width: 80, height: 80))
+                $0.addItem(imageView1)
+                $0.addItem(imageView2)
+                $0.addItem(imageView3)
+                $0.addItem(imageView4)
+                $0.addItem(imageView5)
+                $0.addItem(imageView6)
+                $0.addItem(imageView7)
+                $0.addItem(imageView8)
+                $0.addItem(imageView9)
+                $0.addItem(imageView10)
+                $0.addItem(imageView11)
+                $0.addItem(imageView12)
+                $0.addItem(imageView13)
+                $0.addItem(imageView14)
+                $0.addItem(imageView15)
+                $0.addItem(imageView16)
+                $0.addItem(imageView17)
+                $0.addItem(imageView18)
+                $0.addItem(imageView19)
+                $0.addItem(imageView20)
+                $0.addItem(imageView21)
+                $0.addItem(imageView22)
+                $0.addItem(imageView23)
+                $0.addItem(imageView24)
+                $0.addItem(imageView25)
+                $0.addItem(imageView26)
+                $0.addItem(imageView27)
+                $0.addItem(imageView28)
+                $0.addItem(imageView29)
+                $0.addItem(imageView30)
+                $0.addItem(imageView31)
+                $0.addItem(imageView32)
             }
             
             
