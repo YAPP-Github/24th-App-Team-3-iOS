@@ -14,10 +14,10 @@ enum ENFont: LanguageFont {
     static var letterSpacing: CGFloat = 0.0
     
     // 디자인 시스템에 명시된 폰트
-    static let H0: UIFont = .customFont(font: font, style: .semiBold, size: 30)
-    static let H1: UIFont = .customFont(font: font, style: .semiBold, size: 24)
-    static let H2: UIFont = .customFont(font: font, style: .semiBold, size: 22)
-    static let H3: UIFont = .customFont(font: font, style: .semiBold, size: 20)
-    static let H4: UIFont = .customFont(font: font, style: .semiBold, size: 28)
-    static let H5: UIFont = .customFont(font: font, style: .semiBold, size: 16)
+    static let H0: UIFont = .customFont(font: font, style: .regular, size: 30)
+    static let H1: UIFont = .customFont(font: font, style: .regular, size: 24)
+    static let H2: UIFont = .customFont(font: font, style: .regular, size: 22)
+    static let H3: UIFont = .customFont(font: font, style: .regular, size: 20)
+    static let H4: UIFont = .customFont(font: font, style: .regular, size: 18)
+    static let H5: UIFont = .customFont(font: font, style: .regular, size: 16)
 }
